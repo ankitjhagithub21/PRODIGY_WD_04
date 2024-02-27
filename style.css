@@ -132,12 +132,14 @@ body{
 
 #education .education{
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(46, 223, 193, 0.5);
     
-    background-color: #96e8ec;
 }
 #education .education:hover{
     transform: scale(1.02);
 }
+
 
 @media (max-width:768px) { 
     #home img{
