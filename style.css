@@ -8,6 +8,60 @@
     border: none;
     box-shadow: none;
 }
+.navbar{
+    background-color: #DCF0F1;
+}
+.nav-link{
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    background-color: #087075;
+  }
+  
+  .nav-hover::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-hover:hover::before {
+    width: 70%;
+  }
+  .navbar-brand{
+    margin-left: 10px;
+  }
+  
+body{
+    background-image: url("https://img.freepik.com/free-photo/blue-toned-collection-paper-sheets-with-copy-space_23-2148320445.jpg?w=900&t=st=1709066598~exp=1709067198~hmac=c5c0995a7289d90e1e59f33310d419716d3975cedc8f97a8f31c119f7619dcaf");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar-track {
+	
+	
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+    
+	width: 7px;
+	/* background-color: #F5F5F5; */
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color:#66dce2;
+    
+}
 
 body{
     font-family: "Fira Sans", sans-serif;
@@ -22,6 +76,22 @@ body{
 #home a{
     color: rgb(37, 35, 35);
 }
+#home p{
+    font-size: 25px;
+}
+#home i{
+    cursor: pointer;
+    transition: 0.5s;
+}
+#home i:hover{
+    color: rgb(146, 146, 0);
+}
+#scrollBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
 #skills i{
     padding: 20px;
     background-color: whitesmoke;
@@ -32,7 +102,26 @@ body{
     cursor: pointer;
     transform: scale(1.03);
 }
-@media (max-width:768px) {
+#projects .col-lg-4{
+    padding: 20px;
+}
+#projects .card{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px auto;
+    
+}
+
+#education .education{
+    cursor: pointer;
+    
+    background-color: #96e8ec;
+}
+#education .education:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width:768px) { 
     #home img{
         margin-bottom: 30px;
         width: 200px;
@@ -40,6 +129,22 @@ body{
     #home .col-md-8{
         align-items: center;
         text-align: center;
+        padding: 0px;
+    }
+    #home p{
+        width: 100%;
+        font-size: 18px;
+       
+    }
+    .navbar-brand{
+        margin-left: 0px;
+    }
+
+   
+}
+@media (max-width:370px) {
+    #home h1{
+        font-size: 25px;
     }
    
 }
