@@ -35,9 +35,7 @@
   .nav-hover:hover::before {
     width: 70%;
   }
-  .navbar-brand{
-    margin-left: 10px;
-  }
+  
   
 body{
     background-image: url("https://img.freepik.com/free-photo/blue-toned-collection-paper-sheets-with-copy-space_23-2148320445.jpg?w=900&t=st=1709066598~exp=1709067198~hmac=c5c0995a7289d90e1e59f33310d419716d3975cedc8f97a8f31c119f7619dcaf");
@@ -94,10 +92,15 @@ body{
     z-index: 999;
 }
 #skills i{
-    padding: 20px;
+   
+    height: 100px;
+    width: 100px;
     background-color: whitesmoke;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #skills i:hover{
     cursor: pointer;
@@ -110,7 +113,21 @@ body{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 10px auto;
-    
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+#projects .card-body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: none;
+
+}
+#projects .card:hover .card-body{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #education .education{
@@ -137,9 +154,7 @@ body{
         font-size: 18px;
        
     }
-    .navbar-brand{
-        margin-left: 0px;
-    }
+   
 
    
 }
